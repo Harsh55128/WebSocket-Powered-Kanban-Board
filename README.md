@@ -54,24 +54,8 @@ The project focuses heavily on **code quality, scalability, and testing discipli
 
 ## 📂 Project Structure
 
-websocket-kanban-vitest-playwright
-│── backend/
-│ ├── server.js
-│ ├── package.json
-│
-│── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── KanbanBoard.jsx
-│ │ │ ├── TaskCard.jsx
-│ │ ├── tests/
-│ │ │ ├── unit/
-│ │ │ ├── integration/
-│ │ │ ├── e2e/
-│ ├── playwright.config.js
-│ ├── package.json
-│
-└── README.md
+<img width="413" height="466" alt="image" src="https://github.com/user-attachments/assets/ca1482d1-fd9b-4b78-97df-ef10323e1489" />
+
 
 
 ---
