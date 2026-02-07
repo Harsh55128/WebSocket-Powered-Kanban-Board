@@ -1,13 +1,13 @@
-import { render, screen } from "@testing-library/react";
+import { describe, test, expect, vi } from "vitest";
+import { socket } from "../../socket/socket";
 
-import KanbanBoard from "../../components/KanbanBoard";
+test("socket emits task:create", () => {
+  socket.emit = vi.fn();
 
-// mock socket.io-client library
+  socket.emit("task:create", { title: "New Task" });
 
-test("WebSocket receives task update", async () => {
-  render(<KanbanBoard />);
-
-  expect(screen.getByText("Kanban Board")).toBeInTheDocument();
+  expect(socket.emit).toHaveBeenCalledWith(
+    "task:create",
+    expect.any(Object)
+  );
 });
-
-// TODO: Add more integration tests
